@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==70.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analyzer"
+version = "0.1.0"
+description = "A cli application that counts characters and words in a sentence."
+readme = "README.md"
+authors = [{ name = "Ugochukwu Mazi", email = "kingsleyu13@gmail.com" }]
+dependencies = [
+    "click==8.1.7",
+]
+
+[project.scripts]
+analyze = "analyzer.__main__:analyze_word"
